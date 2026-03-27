@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilal Hussain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --paper: #f7f7f5;
+  --ink: #0d0d0d;
+  --ink-mid: #555;
+  --ink-faint: #a0a0a0;
+  --ink-ghost: rgba(0,0,0,0.08);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Cutive Mono', monospace;
+  cursor: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--ink-faint);
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.hero-title {
+  font-size: clamp(48px, 9vw, 120px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.hero-sub {
+  font-size: 14px;
+  color: var(--ink-mid);
+  margin-top: 20px;
+  max-width: 320px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 40px;
+}
+
+.gallery-item img {
+  width: 100%;
+  filter: grayscale(1);
+}
+
+.gallery-item:nth-child(odd) {
+  transform: translateY(20px);
+}
+.gallery-item:nth-child(3n) {
+  transform: translateY(-30px);
+}
+
+.gallery-item:hover img {
+  transform: none;
+}
+
+.about {
+  padding: 60px 40px;
+}
+
+.about-heading {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.about-body {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 300px;
+}
+
+.social-card {
+  border-top: 1px solid var(--ink-ghost);
+  padding: 20px 0;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div>Bilal Hussain</div>
+  <div class="nav-links">
+    <a href="#">Work</a>
+    <a href="#">About</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1 class="hero-title">Bilal Hussain</h1>
+    <p class="hero-sub">what happens on earth stays on earth.</p>
+  </div>
+</section>
+
+<section class="gallery-grid">
+  <div class="gallery-item"><img src="6ECF1306-F24A-4155-9241-A07655EA069A.jpg"></div>
+  <div class="gallery-item"><img src="9EDEA4CC-8D94-4C0F-9418-9FE42314500C.jpg"></div>
+  <div class="gallery-item"><img src="22D5B7F6-9061-4293-BE2C-8210D26B9DF7.jpg"></div>
+</section>
+
+<section class="about">
+  <h2 class="about-heading">The Practice</h2>
+  <p class="about-body">Bilal Hussain is a photographer drawn to the overlooked moment.</p>
+</section>
+
+<div style="position:fixed;bottom:20px;left:20px;font-size:10px;opacity:0.4;">
+  2026 / BILAL HUSSAIN / ARCHIVE
+</div>
+
+</body>
+</html>
